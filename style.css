@@ -23,3 +23,87 @@ body {
     padding: 60px;
     overflow: hidden;
 }
+
+.cards {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #17141D;
+    padding: 30px;
+    font-size: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 99px 0 rgba(0, 0, 0, 1);
+}
+
+.cards .data {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cards .data time {
+    color: #7A7A8C;
+    padding-left: 10px;
+}
+
+.cards h2 {
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    height: 110px;
+}
+
+.cards .autor {
+    display: flex;
+    align-items: center;
+}
+
+.cards .img-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 3px #990000;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.cards .autor .img-container .imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: url(/imagem/emoji.png) no-repeat center center;
+    background-size: cover;
+}
+
+.cards .autor .informacao {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cards .autor .informacao span {
+    display: block;
+    font-size: 10px;
+    color: #7A7A8C;
+    padding-bottom: 3px;
+}
+
+.cards .tags a {
+    display: inline-block;
+    border: solid 3px #28242F;
+    border-radius: 30px;
+    padding: 8px 25px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #7A7A8C;
+    font-weight: bold;
+}
+
+.cards .tags a:hover {
+    color: #990000;
+    border-color: #ffffff;
+}
