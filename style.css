@@ -24,6 +24,27 @@ body {
     overflow: hidden;
 }
 
+.container .cards:nth-child(2){
+    margin-left: 0;
+}
+
+.titulo-card {
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 99px 0 rgba(0, 0, 0, 1);
+    margin-right: 30px;
+    background-image: url(/imagem/emoji.png);
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .cards {
     width: 300px;
     height: 400px;
@@ -31,12 +52,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 0;
     background-color: #17141D;
     padding: 30px;
     font-size: 10px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 99px 0 rgba(0, 0, 0, 1);
+    margin-left: -150px;
+    transition: 0.2s;
+}
+
+.cards:hover {
+    margin-right: 150px;
+    transform: translateY(-20px);
 }
 
 .cards .data {
