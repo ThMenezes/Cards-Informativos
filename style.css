@@ -136,3 +136,20 @@ body {
     color: #990000;
     border-color: #ffffff;
 }
+
+@media (max-width: 600px) {
+    .container {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 40px;
+        overflow: auto;
+    }
+    
+    .cards {
+    margin-left: 0px;    
+    }
+}
+
+   
